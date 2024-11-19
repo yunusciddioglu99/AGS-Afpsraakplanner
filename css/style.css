@@ -1,0 +1,72 @@
+*, *::after, *:before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;  /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    font-size: 200%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Weekoverzicht Tabel */
+.week-overview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.week-overview table th, .week-overview table td {
+    border: 0.1rem solid #ddd;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.week-overview table th {
+    background-color: #f4f4f4;
+}
+
+.week-overview table td[data-status="available"] {
+    background-color: #d4edda;
+    cursor: pointer;
+}
+
+.week-overview table td[data-status="booked"] {
+    background-color: #ffc107;
+}
+
+.week-overview table td[data-status="blocked"] {
+    background-color: #f8d7da;
+    cursor: not-allowed;
+}
+
+.week-overview table td[data-status="available"]:hover {
+    background-color: #c3e6cb;
+}
