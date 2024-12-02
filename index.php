@@ -12,8 +12,8 @@
         <h1>Welkom bij AGS Afsprakenplanner</h1>
         <p>Kies een optie om verder te gaan:</p>
         <div class="buttons">
-            <a href="student.html" class="button">Student Interface</a>
-            <a href="admin.html" class="button">Admin Interface</a>
+            <a href="student.php" class="button">Student Interface</a>
+            <a href="admin.php" class="button">Admin Interface</a>
         </div>
     </div>
 </body>
