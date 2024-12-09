@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e6f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+.login-container h1 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+.login-container .toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.login-container .toggle-buttons button {
+    flex: 1;
+    padding: 0.5rem;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background: #ddd;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-container .toggle-buttons button.active {
+    background: #4CAF50;
+    color: white;
+}
+.login-container form {
+    display: none;
+}
+.login-container form.active {
+    display: block;
+}
+.login-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.login-container input:focus {
+    border-color: #4CAF50;
+}
+.login-container button.submit-button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-container button.submit-button:hover {
+    background: #45a049;
+}
