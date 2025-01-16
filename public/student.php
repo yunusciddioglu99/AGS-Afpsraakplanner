@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <h1>Plan je printafspraak</h1>
+        <button><a href="./afspraakMaker.html">Maak je afspraak</a></button>
         <div class="week-overview">
             <table>
                 <thead>

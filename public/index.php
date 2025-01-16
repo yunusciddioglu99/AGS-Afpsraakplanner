@@ -2,7 +2,7 @@
 
 
 require_once '../source/config.php';
-require_once '../source/database.php';
+require_once SOURCE_ROOT . 'database.php';
 
 try {
 
@@ -13,11 +13,8 @@ $connection = database_connect();
 //$sql = 'SELECT 1'; 
 
 $sql = 'SELECT * FROM Klanten  ORDER BY id ASC'; 
-
 $stmt = $connection->prepare($sql);
-
 $stmt->execute();
-
 $result = $stmt->get_result();
 
 $klanten = mysqli_fetch_assoc($result);
@@ -27,10 +24,6 @@ var_dump( $klanten );
 } catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
-
-
-
-
 ?>
 
 <!DOCTYPE html>
